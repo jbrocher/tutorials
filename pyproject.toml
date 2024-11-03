@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "sample-project"
+version = "0.1.0"
+description = ""
+authors = ["Author Name <author@example.com>"]
+# readme = "README.md"
+# license = "BSD"
+packages = [
+  { include = "sample_package" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ruff = "^0.7.2"
+
+[tool.pyright]
+extraPaths = ["/home/jb/Projects/odoo/odoo"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
